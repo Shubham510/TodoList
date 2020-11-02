@@ -132,8 +132,7 @@ function handleClickListener (e){
 function handleKeypressListener (e){
     if(e.key === 'Enter'){
         const text = e.target.value;
-
-        if(!text){
+        if(text.trim() === ""){
             return;
         }
 

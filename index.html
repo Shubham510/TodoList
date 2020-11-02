@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/7ac5e361ad.js" crossorigin="anonymous"></script>
+        <title> Tasks Manager </title>
+    </head>
+
+    <body>
+        <div id="app-container">
+            <div class="title">
+                Tasks Manager
+            </div>
+            <div id="text-box">
+                <input type="text" id="add-task" placeholder="Add a new task">
+            </div>
+            <div id="extra-features">
+                <button class="complete-all">Complete all tasks</button>
+                <button class="undo-delete">Undo Last Delete</button>
+                <button class="clear-completed">Clear completed</button>
+            </div>
+            <div id="count-and-filter">
+                <div id="task-counter">Total Tasks : <span id= "task-count">0</span></div>
+                <div id="view-filters">
+                    <input type="radio" id="all" class="view-mode" name="view-mode" value="all" checked>
+                    <label for="all">All</label>
+                    
+                    <input type="radio" id="incomplete" class="view-mode" name="view-mode" value="incomplete">
+                    <label for="incomplete">Incomplete</label>
+                    
+                    <input type="radio" id="complete" class="view-mode" name="view-mode" value="complete">
+                    <label for="complete">Complete</label>
+                </div>
+            </div>
+            <ul id="task-list">
+                <!-- <li>
+                    <input type="checkbox" id="143532542" checked class="task-checkbox">
+                    <label for="143532542">Sample</label>
+                    <i class="far fa-trash-alt" data-class="delete" data-id="143532542"></i>
+                </li> -->
+            </ul>
+            
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

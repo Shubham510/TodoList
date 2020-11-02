@@ -1,0 +1,101 @@
+body *{
+    font-family: sans-serif;
+}
+
+
+#app-container{
+    justify-content: center;
+    background-color: whitesmoke;
+    justify-content: center;
+    width: 100%;
+    min-width: 350px;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+#text-box{
+    margin-left: 50px;
+}
+
+#add-task{
+    width: 90% ; 
+    border: none;
+    font-size: 1.5rem;
+}
+
+.undo-delete{
+    margin-left: 15%;
+}
+
+#task-list{
+    margin: 10px;
+    font-weight: 600;
+}
+
+#count-and-filter div{
+    overflow: auto;
+    display: inline-block;
+    font-weight: lighter;
+}
+
+#task-counter{
+    margin-left: 20px;
+}
+
+#view-filters{
+    float: right;
+    margin-right: 20px;
+}
+
+#extra-features,#count-and-filters{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#extra-features button{
+    background-color: burlywood;
+}
+
+.clear-completed{
+    float: right;
+    font-weight: lighter;
+}
+
+
+button{
+    border: none;
+    margin: 2px;
+}
+
+li{
+    overflow: auto;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+li:hover{
+    background-color: burlywood;
+}
+
+li i{
+    float: right;
+    background-color: lightcoral;
+}
+
+.task-checkbox:checked + label{
+    text-decoration: line-through;
+}
